@@ -1,0 +1,3 @@
+[submodule "3rdparty/Bacon2D"]
+	path = 3rdparty/Bacon2D
+	url = https://github.com/obeezzy/Bacon2D
