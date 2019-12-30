@@ -1,4 +1,6 @@
-QT += quick
+TEMPLATE = app
+
+QT += gui qml quick
 
 CONFIG += c++17
 
@@ -16,7 +18,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp
 
-RESOURCES += ../qml/qml.qrc
+RESOURCES += qml/qml.qrc
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =
@@ -27,4 +29,4 @@ QML_DESIGNER_IMPORT_PATH =
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
-!isEmpty(target.path): INSTALLS += target
+#!isEmpty(target.path): INSTALLS += target
